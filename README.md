@@ -13,3 +13,8 @@
     cd Javascript-snakeGame
 ```
 4) Go to the index.html and Run.
+
+### How to contribute.
+1) Install the project and run it locally.
+2) Add some feature, push it to your Github.
+3) provide a pull request with a description.
