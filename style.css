@@ -1,19 +1,115 @@
 .body {
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    /* background-color: #252525; */
+    /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+    background-image: url('assets/Anomaly\,\ Tobias\ Roetsch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-.board {
-    height: 90vmin;
-    width: 92vmin;
+#board {
+    height: auto;
+    width: 90vmin;
     /* background: #85FFBD; */
     background: black;
     border: 2px solid white;
-    display: grid;
+    /* display: grid;
     grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr); */
+}
+
+
+
+/*           
+                    Designing the menu              
+ */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(141, 141, 141, 0.089);
+    backdrop-filter: blur(5px) saturate(180%);
+    border-radius: 16px;
+    border: 0;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-size: larger;
+    color: white;
+    border: 0;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    background: black;
+    transition: transform 1s ease, width 1s, border-radius 10ms linear;
+
+}
+
+.btn:hover {
+    width: 130px;
+    border-radius: 20px;
+}
+
+.quit {
+    background: rgb(231, 75, 75);
+}
+
+.pause:hover {
+    color: rgb(235, 98, 98);
+}
+
+.strt:hover {
+    color: rgb(71, 241, 108);
+}
+
+
+
+.menu h1 {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/*                  
+            Desinging the walls    
+*/
+
+.top-wall {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wall {
+    width: 20px;
+    height: 20px;
+    background: #E9A172;
+    border: .5px solid black;
+    border-radius: 5px;
+}
+
+.right-left-wall {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-wall {
+    width: 24px;
+}
+
+.bottom-wall {
+    height: 24px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
 }
