@@ -1,5 +1,5 @@
 # Snake Game
-
+By : Victor & Karim
 ### This is a snake game built using JavaScript.
 ![firefox_SOXltPgMWs](https://user-images.githubusercontent.com/89346667/215269886-1ebac942-a540-4c9c-a2cb-466759ac492b.png)
 
