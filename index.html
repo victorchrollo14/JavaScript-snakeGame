@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>snake game</title>
-  </head>
-  <body>
-    <div class="body">
-      <svg class="apple" width="30" height="30" viewBox="0 0 104 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g opacity="0.4" filter="url(#filter0_f_12_233)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.8638 29.6207C84.0119 37.617 85.1195 49.6263 78.1108 64.6565C71.1021 79.6867 51.0459 81.8272 43.1361 78.1387C42.0554 77.6348 41.0296 77.0712 40.06 76.4537C38.9637 76.1078 37.8726 75.6843 36.7919 75.1804C27.0155 70.6216 17.9392 54.0889 24.6386 39.722C31.338 25.3552 42.4346 18.2292 58.707 25.8172C74.9794 33.4051 49.7156 21.6244 66.8638 29.6207Z" fill="#FE5951"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.8638 29.6207C84.0119 37.617 85.1195 49.6263 78.1108 64.6565C71.1021 79.6867 51.0459 81.8272 43.1361 78.1387C42.0554 77.6348 41.0296 77.0712 40.06 76.4537C38.9637 76.1078 37.8726 75.6843 36.7919 75.1804C27.0155 70.6216 17.9392 54.0889 24.6386 39.722C31.338 25.3552 42.4346 18.2292 58.707 25.8172C74.9794 33.4051 49.7156 21.6244 66.8638 29.6207Z" fill="url(#paint0_linear_12_233)" style="mix-blend-mode:soft-light"/>
-        </g>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M67.6479 25.5728C84.7961 33.5691 87.8921 46.0466 79.8012 61.0312C71.7104 76.0158 52.7364 78.2019 44.8266 74.5134C43.7459 74.0095 42.7201 73.4459 41.7505 72.8284C40.6542 72.4826 39.563 72.059 38.4824 71.5551C28.706 66.9963 21.3798 51.4429 26.3291 36.0967C31.2784 20.7506 45.0314 15.0266 61.3038 22.6145C77.5762 30.2024 50.4998 17.5765 67.6479 25.5728Z" fill="#FE5951"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M67.6479 25.5728C84.7961 33.5691 87.8921 46.0466 79.8012 61.0312C71.7104 76.0158 52.7364 78.2019 44.8266 74.5134C43.7459 74.0095 42.7201 73.4459 41.7505 72.8284C40.6542 72.4826 39.563 72.059 38.4824 71.5551C28.706 66.9963 21.3798 51.4429 26.3291 36.0967C31.2784 20.7506 45.0314 15.0266 61.3038 22.6145C77.5762 30.2024 50.4998 17.5765 67.6479 25.5728Z" fill="url(#paint1_linear_12_233)" style="mix-blend-mode:soft-light"/>
-        <g opacity="0.8" filter="url(#filter1_f_12_233)">
-        <ellipse cx="14.5" cy="7" rx="14.5" ry="7" transform="matrix(-0.906308 -0.422618 -0.422618 0.906308 77.1947 31.1279)" fill="url(#paint2_radial_12_233)"/>
-        </g>
-        <g opacity="0.3" filter="url(#filter2_f_12_233)">
-        <ellipse cx="46.3595" cy="48.7472" rx="12.5" ry="9" transform="rotate(25 46.3595 48.7472)" fill="white"/>
-        </g>
-        <g filter="url(#filter3_f_12_233)">
-        <circle cx="42.2811" cy="46.8454" r="5" transform="rotate(25 42.2811 46.8454)" fill="white"/>
-        </g>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.9588 19.6262L69.503 21.2159C69.503 21.2159 67.3319 23.2232 66.448 24.3478C64.8513 26.0915 61.5454 31.4716 61.5454 31.4716C61.5454 31.4716 61.4064 31.5914 61.0692 31.4224C60.7319 31.2535 60.7033 31.0642 60.7033 31.0642C60.7033 31.0642 63.0316 25.5004 64.0002 23.6929C64.9689 21.8853 66.9588 19.6262 66.9588 19.6262Z" fill="#93420C"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.9588 19.6262L69.503 21.2159C69.503 21.2159 67.3319 23.2232 66.448 24.3478C64.8513 26.0915 61.5454 31.4716 61.5454 31.4716C61.5454 31.4716 61.4064 31.5914 61.0692 31.4224C60.7319 31.2535 60.7033 31.0642 60.7033 31.0642C60.7033 31.0642 63.0316 25.5004 64.0002 23.6929C64.9689 21.8853 66.9588 19.6262 66.9588 19.6262Z" fill="url(#paint3_linear_12_233)" style="mix-blend-mode:soft-light"/>
-        <ellipse cx="68.2309" cy="20.421" rx="1.5" ry="1" transform="rotate(32 68.2309 20.421)" fill="#B75E22"/>
-        <defs>
-        <filter id="filter0_f_12_233" x="0.586441" y="0.993492" width="103.316" height="100.465" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feGaussianBlur stdDeviation="10.8731" result="effect1_foregroundBlur_12_233"/>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>snake game</title>
+</head>
+
+<body>
+  <div class="body">
+    <svg class="apple" width="30" height="30" viewBox="0 0 104 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.4" filter="url(#filter0_f_12_233)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M66.8638 29.6207C84.0119 37.617 85.1195 49.6263 78.1108 64.6565C71.1021 79.6867 51.0459 81.8272 43.1361 78.1387C42.0554 77.6348 41.0296 77.0712 40.06 76.4537C38.9637 76.1078 37.8726 75.6843 36.7919 75.1804C27.0155 70.6216 17.9392 54.0889 24.6386 39.722C31.338 25.3552 42.4346 18.2292 58.707 25.8172C74.9794 33.4051 49.7156 21.6244 66.8638 29.6207Z"
+          fill="#FE5951" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M66.8638 29.6207C84.0119 37.617 85.1195 49.6263 78.1108 64.6565C71.1021 79.6867 51.0459 81.8272 43.1361 78.1387C42.0554 77.6348 41.0296 77.0712 40.06 76.4537C38.9637 76.1078 37.8726 75.6843 36.7919 75.1804C27.0155 70.6216 17.9392 54.0889 24.6386 39.722C31.338 25.3552 42.4346 18.2292 58.707 25.8172C74.9794 33.4051 49.7156 21.6244 66.8638 29.6207Z"
+          fill="url(#paint0_linear_12_233)" style="mix-blend-mode:soft-light" />
+      </g>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M67.6479 25.5728C84.7961 33.5691 87.8921 46.0466 79.8012 61.0312C71.7104 76.0158 52.7364 78.2019 44.8266 74.5134C43.7459 74.0095 42.7201 73.4459 41.7505 72.8284C40.6542 72.4826 39.563 72.059 38.4824 71.5551C28.706 66.9963 21.3798 51.4429 26.3291 36.0967C31.2784 20.7506 45.0314 15.0266 61.3038 22.6145C77.5762 30.2024 50.4998 17.5765 67.6479 25.5728Z"
+        fill="#FE5951" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M67.6479 25.5728C84.7961 33.5691 87.8921 46.0466 79.8012 61.0312C71.7104 76.0158 52.7364 78.2019 44.8266 74.5134C43.7459 74.0095 42.7201 73.4459 41.7505 72.8284C40.6542 72.4826 39.563 72.059 38.4824 71.5551C28.706 66.9963 21.3798 51.4429 26.3291 36.0967C31.2784 20.7506 45.0314 15.0266 61.3038 22.6145C77.5762 30.2024 50.4998 17.5765 67.6479 25.5728Z"
+        fill="url(#paint1_linear_12_233)" style="mix-blend-mode:soft-light" />
+      <g opacity="0.8" filter="url(#filter1_f_12_233)">
+        <ellipse cx="14.5" cy="7" rx="14.5" ry="7"
+          transform="matrix(-0.906308 -0.422618 -0.422618 0.906308 77.1947 31.1279)"
+          fill="url(#paint2_radial_12_233)" />
+      </g>
+      <g opacity="0.3" filter="url(#filter2_f_12_233)">
+        <ellipse cx="46.3595" cy="48.7472" rx="12.5" ry="9" transform="rotate(25 46.3595 48.7472)" fill="white" />
+      </g>
+      <g filter="url(#filter3_f_12_233)">
+        <circle cx="42.2811" cy="46.8454" r="5" transform="rotate(25 42.2811 46.8454)" fill="white" />
+      </g>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M66.9588 19.6262L69.503 21.2159C69.503 21.2159 67.3319 23.2232 66.448 24.3478C64.8513 26.0915 61.5454 31.4716 61.5454 31.4716C61.5454 31.4716 61.4064 31.5914 61.0692 31.4224C60.7319 31.2535 60.7033 31.0642 60.7033 31.0642C60.7033 31.0642 63.0316 25.5004 64.0002 23.6929C64.9689 21.8853 66.9588 19.6262 66.9588 19.6262Z"
+        fill="#93420C" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M66.9588 19.6262L69.503 21.2159C69.503 21.2159 67.3319 23.2232 66.448 24.3478C64.8513 26.0915 61.5454 31.4716 61.5454 31.4716C61.5454 31.4716 61.4064 31.5914 61.0692 31.4224C60.7319 31.2535 60.7033 31.0642 60.7033 31.0642C60.7033 31.0642 63.0316 25.5004 64.0002 23.6929C64.9689 21.8853 66.9588 19.6262 66.9588 19.6262Z"
+        fill="url(#paint3_linear_12_233)" style="mix-blend-mode:soft-light" />
+      <ellipse cx="68.2309" cy="20.421" rx="1.5" ry="1" transform="rotate(32 68.2309 20.421)" fill="#B75E22" />
+      <defs>
+        <filter id="filter0_f_12_233" x="0.586441" y="0.993492" width="103.316" height="100.465"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="10.8731" result="effect1_foregroundBlur_12_233" />
         </filter>
-        <filter id="filter1_f_12_233" x="42.6217" y="17.5237" width="36.9465" height="27.6409" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feGaussianBlur stdDeviation="2.5" result="effect1_foregroundBlur_12_233"/>
+        <filter id="filter1_f_12_233" x="42.6217" y="17.5237" width="36.9465" height="27.6409"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="2.5" result="effect1_foregroundBlur_12_233" />
         </filter>
-        <filter id="filter2_f_12_233" x="12.4059" y="17.0281" width="67.9071" height="63.4384" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feGaussianBlur stdDeviation="11" result="effect1_foregroundBlur_12_233"/>
+        <filter id="filter2_f_12_233" x="12.4059" y="17.0281" width="67.9071" height="63.4384"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="11" result="effect1_foregroundBlur_12_233" />
         </filter>
-        <filter id="filter3_f_12_233" x="15.2799" y="19.8442" width="54.0024" height="54.0024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feGaussianBlur stdDeviation="11" result="effect1_foregroundBlur_12_233"/>
+        <filter id="filter3_f_12_233" x="15.2799" y="19.8442" width="54.0024" height="54.0024"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="11" result="effect1_foregroundBlur_12_233" />
         </filter>
-        <linearGradient id="paint0_linear_12_233" x1="13.2279" y1="64.1923" x2="66.7001" y2="89.1268" gradientUnits="userSpaceOnUse">
-        <stop stop-color="white" stop-opacity="0.5"/>
-        <stop offset="1" stop-opacity="0.5"/>
+        <linearGradient id="paint0_linear_12_233" x1="13.2279" y1="64.1923" x2="66.7001" y2="89.1268"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" stop-opacity="0.5" />
+          <stop offset="1" stop-opacity="0.5" />
         </linearGradient>
-        <linearGradient id="paint1_linear_12_233" x1="14.6905" y1="60.4608" x2="68.4652" y2="85.5363" gradientUnits="userSpaceOnUse">
-        <stop stop-color="white" stop-opacity="0.5"/>
-        <stop offset="1" stop-opacity="0.5"/>
+        <linearGradient id="paint1_linear_12_233" x1="14.6905" y1="60.4608" x2="68.4652" y2="85.5363"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" stop-opacity="0.5" />
+          <stop offset="1" stop-opacity="0.5" />
         </linearGradient>
-        <radialGradient id="paint2_radial_12_233" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.8105 5.22431) rotate(90) scale(12.4476 49.6964)">
-        <stop stop-color="#EE2A23"/>
-        <stop offset="1" stop-color="#FF9E9A"/>
+        <radialGradient id="paint2_radial_12_233" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(13.8105 5.22431) rotate(90) scale(12.4476 49.6964)">
+          <stop stop-color="#EE2A23" />
+          <stop offset="1" stop-color="#FF9E9A" />
         </radialGradient>
-        <linearGradient id="paint3_linear_12_233" x1="59.6746" y1="30.5592" x2="62.5442" y2="32.3523" gradientUnits="userSpaceOnUse">
-        <stop stop-color="white" stop-opacity="0.5"/>
-        <stop offset="1" stop-opacity="0.5"/>
+        <linearGradient id="paint3_linear_12_233" x1="59.6746" y1="30.5592" x2="62.5442" y2="32.3523"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" stop-opacity="0.5" />
+          <stop offset="1" stop-opacity="0.5" />
         </linearGradient>
         </defs>
         </svg>
       <div id="board">
-          <div class="top-wall top-bottom-wall">
+          <div class="top-wall">
            <div class="wall"></div>
            <div class="wall"></div>
            <div class="wall"></div>
@@ -95,34 +119,6 @@
            <div class="wall"></div>
            <div class="wall"></div>
           </div>
-          <!--                             Bottom wall                 -->
-          <div class="bottom-wall top-bottom-wall">
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-            <div class="wall"></div>
-           </div>
       </div>
       <div class="menu">
         <h1>Menu</h1>
@@ -131,5 +127,6 @@
         <button class="quit btn">Quit</button>
       </div>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
