@@ -92,19 +92,20 @@ g[id="snake last"] {
     display: grid;
     height: 25px;
     grid-template-columns: repeat(25, 1fr);
-    gap: 2px;
+    gap: 1px;
 }
 
 .bottom-wall {
     position: absolute;
-    bottom: 30px;
+    bottom: 0%;
+    width: 100%;
 }
 
 .wall {
     box-sizing: border-box;
     width: 100%;
     height: 25px;
-    background: red;
-    border: 2px solid rgb(51, 252, 1);
+    background: #E9A172;
+    border: 2px solid rgb(75, 31, 2);
     border-radius: 4px;
 }
