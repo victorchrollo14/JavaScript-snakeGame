@@ -76,11 +76,16 @@
 /*                  
             Desinging the walls    
 */
-.top-wall {
+.top-bottom-wall {
     display: grid;
     height: 25px;
     grid-template-columns: repeat(25, 1fr);
     gap: 2px;
+}
+
+.bottom-wall {
+    position: absolute;
+    bottom: 30px;
 }
 
 .wall {
