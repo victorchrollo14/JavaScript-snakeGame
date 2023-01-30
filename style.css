@@ -12,17 +12,12 @@
 }
 
 #board {
-    height: auto;
+    height: 92vmin;
     width: 90vmin;
-    /* background: #85FFBD; */
     background: black;
     border: 2px solid white;
-    /* display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(18, 1fr); */
+    /* position: absolute; */
 }
-
-
 
 /*           
                     Designing the menu              
@@ -72,8 +67,6 @@
     color: rgb(71, 241, 108);
 }
 
-
-
 .menu h1 {
     color: white;
     text-decoration: underline;
@@ -83,33 +76,18 @@
 /*                  
             Desinging the walls    
 */
-
 .top-wall {
-    height: 24px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    height: 25px;
+    grid-template-columns: repeat(25, 1fr);
+    gap: 2px;
 }
 
 .wall {
-    width: 20px;
-    height: 20px;
-    background: #E9A172;
-    border: .5px solid black;
-    border-radius: 5px;
-}
-
-.right-left-wall {
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-wall {
-    width: 24px;
-}
-
-.bottom-wall {
-    height: 24px;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+    background: red;
+    border: 2px solid rgb(51, 252, 1);
+    border-radius: 4px;
 }
