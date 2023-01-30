@@ -8,16 +8,7 @@ g[id="snake last"] {
     opacity: 0;
 }
 
-/*
 
-
-svg:hover g[id="snake last"] {
-    transform: translateX(0);
-}
-
-svg:hover g[id="snake first"] {
-    transform: translateX(-100%);
-}*/
 
 .body {
     /* background-color: #252525; */
