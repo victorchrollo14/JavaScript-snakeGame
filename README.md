@@ -4,7 +4,8 @@ By : Victor & Karim
 
 ### This is a snake game built using JavaScript.
 
-![1674992383407](image/README/1674992383407.png)
+![firefox_RCwX6cpPjL](https://user-images.githubusercontent.com/89346667/215323821-0d27b914-eb38-4227-b08d-cddc038be9c4.png)
+
 
 ### How to install
 
