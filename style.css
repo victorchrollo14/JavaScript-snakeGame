@@ -1,4 +1,4 @@
-g[id="snake first"],
+/* g[id="snake first"],
 g[id="snake last"] {
     transition: all 250ms ease-in-out;
 }
@@ -12,7 +12,7 @@ g[id="snake last"] {
     position: absolute;
     top: 20%;
     left: 30%;
-}
+} */
 
 .apple {
     position: absolute;
@@ -23,7 +23,6 @@ g[id="snake last"] {
 
 .body {
     /* background-color: #252525; */
-    /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
     background-image: url('assets/Anomaly\,\ Tobias\ Roetsch.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,4 +162,49 @@ g[id="snake last"] {
     position: absolute;
     top: -4%;
     right: 37.4%;
+}
+
+/* snake  */
+.snake {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 100px;
+    height: 20px;
+    /* background: red; */
+}
+
+.head {
+    width: 15px;
+    height: 15px;
+    background-color: #04fa77;
+    /* border-radius: 32% 68% 63% 37% / 56% 45% 55% 44%; */
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.eyes {
+    width: 4px;
+    height: 2px;
+    margin: 3px 2px 0 2px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.snake-body {
+    width: 15px;
+    height: 15px;
+    background-color: #85FFBD;
+    /* border-radius: 50%; */
+    border: 0;
+}
+
+.snake-tail {
+    width: 15px;
+    height: 20px;
+    background-color: #35ec8b;
+    border-radius: 0 0 50px 50px;
 }
