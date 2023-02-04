@@ -191,7 +191,7 @@ g[id="snake last"] {
 .head {
     width: 15px;
     height: 15px;
-    background-color: #04fa77;
+    background-color: #6DC52D;
     /* border-radius: 32% 68% 63% 37% / 56% 45% 55% 44%; */
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -211,14 +211,14 @@ g[id="snake last"] {
 .snake-body {
     width: 15px;
     height: 15px;
-    background-color: #85FFBD;
+    background-color: #6DC52D;
     border: 0;
 }
 
 .snake-tail {
     width: 15px;
     height: 20px;
-    background-color: #35ec8b;
+    background-color: #6DC52D;
     border-radius: 0 0 50px 50px;
 }
 

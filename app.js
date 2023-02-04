@@ -3,9 +3,9 @@ let gameover = new Audio('music/gameover.mp3');
 let move = new Audio('music/move.mp3');
 let music = new Audio('music/music.mp3');
 
-let speed = 2;
+let speed = 19;
 let lastPaintTime = 0;
-let x = 5.8; y = 0;
+
 
 
 // let snakef=document.getElementById('snake first');
@@ -39,24 +39,13 @@ let x = 5.8; y = 0;
 
 // animation frame
 
-function main(ctime){
-    window.requestAnimationFrame(main);
-    if(ctime - lastPaintTime > 1/speed){
-        return;
-    }
-    lastPaintTime = ctime;
-    console.log(ctime);
-    gameEngine();
-}
 
-
-
-
-
-function gameEngine(){
-    // part 1: Updating the snake array & food.
-    
-
-    // part 2: render the snake and food.
-}
+// function gameEngine(){
+//     // part 1: Updating the snake array & food.
+//     x += 3;
+//     if(x <= (board.clientWidth - 120)){
+//         snake.style.transform = `translateX(${x}px) rotate(90deg)`;
+//     }
+//     // part 2: render the snake and food.
+// }
 
