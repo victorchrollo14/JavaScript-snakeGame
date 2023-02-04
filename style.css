@@ -168,11 +168,25 @@ g[id="snake last"] {
 .snake {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 5.8%;
     width: 100px;
     height: 20px;
+    transform: translate(0px, 0px) rotate(90deg);
     /* background: red; */
+    /* animation-name: moveSnake;
+    animation-duration: .5s; */
 }
+
+/* @keyframes moveSnake {
+    from {
+        top: 30%;
+        left: 30%;
+    }
+
+    to {
+        top: 5%;
+    }
+} */
 
 .head {
     width: 15px;
@@ -198,7 +212,6 @@ g[id="snake last"] {
     width: 15px;
     height: 15px;
     background-color: #85FFBD;
-    /* border-radius: 50%; */
     border: 0;
 }
 
@@ -207,4 +220,22 @@ g[id="snake last"] {
     height: 20px;
     background-color: #35ec8b;
     border-radius: 0 0 50px 50px;
+}
+
+
+/* dynamic snake classes */
+.corner-left {
+    border-radius: 10px 0 0 0;
+}
+
+.corner-right {
+    border-radius: 0 10px 0 0;
+}
+
+.head-right {
+    transform: rotate(90deg) translate(15px, -15px);
+}
+
+.head-left {
+    transform: rotate(-90deg) translate(-15px, -15px);
 }
